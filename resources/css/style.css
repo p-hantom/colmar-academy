@@ -7,6 +7,7 @@ h1{
 
 h2{
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 h1,h2,p{
@@ -15,6 +16,7 @@ h1,h2,p{
 
 p{
   font-size: 2.5rem;
+  margin-bottom: 32px;
 }
 
 /* header */
@@ -34,21 +36,20 @@ header{
   align-items: center;
 }
 
-.desktop {
+header .desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 64px;
-  //float: right;
 }
 
-.desktop ul{
+header .right ul{
   display: flex;
   flex-direction: row;
   margin-right: 8px;
 }
 
-.desktop ul li{
+header ul li{
   padding-right: 16px;
 }
 
@@ -86,13 +87,16 @@ embed{
 }
 
 @media only screen and (max-width: 576px){
-  .desktop, .keep_practicing{
+  .keep_practicing, .desktop{
+    display: none;
+  }
+  header .desktop{
     display: none;
   }
   .mobile{
     display: block;
   }
-  .mobile .row{
+  header .mobile .row{
     height: 64px;
   }
   .mobile .row .col-xs-3{
@@ -131,8 +135,11 @@ img{
 
 .title .btn{
   width: 100%;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: #4d4d4d;
+  margin-bottom: 24px;
+  border: none;
 }
 
 .title .text{
@@ -144,8 +151,30 @@ img{
   //margin-top: 100px;
 }
 
+.title .text h2{
+  margin-top: 0;
+}
+
 .title h1{
   margin-top: 0;
+}
+
+.main .row .info:last-child{
+  background-color: #cccccc;
+}
+
+@media only screen and (max-width: 576px){
+  .title .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .title .img-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main .row .info:last-child{
+    background-color: white;
+  }
 }
 
 /* main */
@@ -174,8 +203,29 @@ img{
   flex: 1;
 }
 
+.thesis{
+  border: 1px solid #cccccc;
+}
+
 .thesis video{
   width: 100%;
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 576px){
+  .start_learning{
+    background-color: white;
+  }
+  .start_learning a{
+    color: #4d4d4d;
+  }
+  .start_learning .row{
+    display: flex;
+    //justify-content: center;
+    background-color: #cccccc;
+    margin-bottom: 8px;
+    padding-left: 16px;
+  }
 }
 
 /* footer */
