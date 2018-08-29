@@ -1,0 +1,192 @@
+h1{
+  font-size: 6rem;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+
+h2{
+  margin-bottom: 24px;
+}
+
+h1,h2,p{
+  color: #4d4d4d;
+}
+
+p{
+  font-size: 2.5rem;
+}
+
+/* header */
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  //display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+}
+
+.desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 64px;
+  //float: right;
+}
+
+.desktop ul{
+  display: flex;
+  flex-direction: row;
+  margin-right: 8px;
+}
+
+.desktop ul li{
+  padding-right: 16px;
+}
+
+.right ul{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.mobile{
+  display: none;
+}
+
+.logo{
+  padding-left: 24px;
+}
+
+.logo1{
+  color: black;
+}
+
+.logo2{
+  color: gray;
+}
+
+.left{
+  font-size: 25px;
+  flex: 1;
+  //height: 32px;
+}
+
+embed{
+  height: 32px;
+  width: 32px;
+}
+
+@media only screen and (max-width: 576px){
+  .desktop, .keep_practicing{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .mobile .row{
+    height: 64px;
+  }
+  .mobile .row .col-xs-3{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* main banner*/
+
+.title{
+  background-color: #cccccc;
+}
+
+.title,.thesis,footer,.main{
+  position: relative;
+  top: 64px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.img-container{
+  overflow: hidden;
+}
+
+.title .row{
+  display: flex;
+}
+
+.title .btn{
+  width: 100%;
+  padding: 12px;
+  background-color: #4d4d4d;
+}
+
+.title .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  //margin-top: 100px;
+}
+
+.title h1{
+  margin-top: 0;
+}
+
+/* main */
+
+.main .info{
+  border: 1px solid #cccccc;
+}
+
+.start_learning{
+  background-color: #cccccc;
+  padding-bottom: 40px;
+}
+
+.start_learning h1,.thesis h1{
+  text-align: center;
+}
+
+.start_learning .row{
+  display: flex;
+}
+
+.start_learning .col-md-3{
+  background-color: white;
+  margin-right: 45px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.thesis video{
+  width: 100%;
+}
+
+/* footer */
+
+footer{
+  border-top: 1px solid #cccccc;
+}
+
+footer .copyright{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  font-size: 1.5rem;
+}
